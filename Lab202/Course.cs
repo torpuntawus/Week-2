@@ -57,7 +57,7 @@ namespace Lab202
             int number;
 
             bool check = int.TryParse(CourseID, out number);
-            if (CourseID.Length > 6 || check == false)
+            if (CourseID.Length != 6 || check == false)
             {
                 Console.WriteLine("261200: error try setting invalid CourseID!");
             }
